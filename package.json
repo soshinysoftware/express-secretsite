@@ -1,6 +1,6 @@
 {
   "name": "express-secretsite",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "express middleware for hiding a website from the public",
   "main": "index.js",
   "scripts": {
