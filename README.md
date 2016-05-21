@@ -23,19 +23,22 @@ app.use(require('express-secretsite')( {
 ```js
 var defaultOptions =
 {
-	/* when specified, the user must access this pathname in order to see the password entry page - set to null to disable this feature */
+	/**
+	 * When specified, the user must access this pathname in order to see the password entry page 
+	 * Set to null to disable this feature 
+	 **/
 	entryPoint: "/unlock-access/",
 	
-	/* the password required to see the site */
+	/* The password required to see the site */
 	password: "guest",
 	
-	/* optionally override the path used for loading the password form */
+	/* Optionally override the path used for loading the password form */
 	passwordInputPagePath: path.resolve(__dirname, "..", "data", "passwordForm.html"),
 	
-	/* optionally override the path used for loading the password confirmation page */
+	/* Optionally override the path used for loading the password confirmation page */
 	passwordConfirmationPath: path.resolve(__dirname, "..", "data", "passwordConfirmation.html"),
 	
-	/* if set to true, will respond with a simple 403 message instead of simply ignoring requests */
+	/* If set to true, will respond with a simple 403 message instead of simply ignoring requests */
 	respondWith403: false
 }; 
 ```
