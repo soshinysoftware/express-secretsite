@@ -39,6 +39,12 @@ var defaultOptions =
 	passwordConfirmationPath: path.resolve(__dirname, "..", "data", "passwordConfirmation.html"),
 	
 	/* If set to true, will respond with a simple 403 message instead of simply ignoring requests */
-	respondWith403: false
+	respondWith403: false,
+	
+	/**
+	 * If set, will use the header with the given name to get the IP address, instead of using the actual connection
+	 * Useful for connections coming through proxy servers
+	 **/
+	ipHeader: null
 }; 
 ```
